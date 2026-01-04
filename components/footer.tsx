@@ -1,6 +1,6 @@
 import { Facebook, Linkedin, Twitter } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
+import Logo from "@/components/logo"
 
 export default function Footer() {
   return (
@@ -13,13 +13,7 @@ export default function Footer() {
             <Link href="/">
               <div className="flex items-center gap-3 cursor-pointer group">
                 <div className="w-12 h-12 flex items-center justify-center transition-transform group-hover:scale-110">
-                  <Image
-                    src="/beastmode-logo-v2.png"
-                    alt="BeastMode Technologies"
-                    width={48}
-                    height={48}
-                    className="w-12 h-12"
-                  />
+                  <Logo size={48} />
                 </div>
                 <span className="text-2xl font-black text-white tracking-widest italic group-hover:text-primary transition-colors">BEASTMODE</span>
               </div>

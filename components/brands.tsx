@@ -1,39 +1,47 @@
 "use client"
 
 const brands = [
-  { name: "ZKTeco", logo: "ZK" },
-  { name: "Cisco", logo: "CI" },
-  { name: "Nemtek", logo: "NM" },
-  { name: "Aluha", logo: "AL" },
-  { name: "Hikvision", logo: "HK" },
-  { name: "Western Digital", logo: "WD" },
-  { name: "Seagate", logo: "SG" },
+  { name: "ZKTeco", logo: "C:/Users/Laptop/.gemini/antigravity/brain/ef3d55c9-515f-4aca-bd9b-5494d91c6b14/zkteco_logo_premium_1767540805676.png" },
+  { name: "Cisco", logo: "C:/Users/Laptop/.gemini/antigravity/brain/ef3d55c9-515f-4aca-bd9b-5494d91c6b14/cisco_logo_premium_1767540824881.png" },
+  { name: "Nemtek", logo: "C:/Users/Laptop/.gemini/antigravity/brain/ef3d55c9-515f-4aca-bd9b-5494d91c6b14/nemtek_logo_premium_1767540878054.png" },
+  { name: "Hikvision", logo: "C:/Users/Laptop/.gemini/antigravity/brain/ef3d55c9-515f-4aca-bd9b-5494d91c6b14/hikvision_logo_premium_1767540843751.png" },
+  { name: "Western Digital", logo: "C:/Users/Laptop/.gemini/antigravity/brain/ef3d55c9-515f-4aca-bd9b-5494d91c6b14/wd_logo_premium_1767540860755.png" },
 ]
+
+import Link from "next/link"
 
 export default function Brands() {
   return (
     <section id="brands" className="py-24 px-4 sm:px-6 lg:px-8 bg-slate-900 border-y border-slate-800">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto text-center">
         {/* Section Header */}
-        <div className="text-center mb-16 space-y-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-white uppercase tracking-widest">Authorized Partners</h2>
+        <div className="mb-16 space-y-4">
+          <Link href="/brands" className="inline-block group">
+            <h2 className="text-3xl md:text-4xl font-bold text-white uppercase tracking-widest group-hover:text-primary transition-colors">Authorized Partners</h2>
+            <div className="h-1 w-0 group-hover:w-full bg-primary transition-all duration-500 mx-auto mt-2"></div>
+          </Link>
           <p className="text-lg text-slate-400">Deployed with components from the world's most trusted brands</p>
         </div>
 
         {/* Brands Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
           {brands.map((brand, index) => (
-            <div
-              key={index}
-              className="bg-slate-800 border border-slate-700 rounded-2xl p-6 flex items-center justify-center hover:bg-slate-750 transition-all group aspect-square"
-            >
-              <div className="flex flex-col items-center gap-3 group-hover:scale-110 transition duration-300 w-full">
-                <div className="w-14 h-14 bg-blue-600/10 rounded-xl flex items-center justify-center font-bold text-blue-500 text-lg border border-blue-500/20 shadow-inner shadow-blue-500/5">
-                  {brand.logo}
+            <Link href="/brands" key={index}>
+              <div
+                className="bg-slate-800 border border-slate-700 rounded-2xl p-6 flex items-center justify-center hover:bg-slate-750 transition-all group aspect-square"
+              >
+                <div className="flex flex-col items-center gap-6 group-hover:scale-105 transition duration-500 w-full h-full">
+                  <div className="flex-1 flex items-center justify-center w-full min-h-0">
+                    <img
+                      src={brand.logo}
+                      alt={brand.name}
+                      className="max-h-full max-w-full object-contain brightness-0 invert opacity-50 group-hover:opacity-100 group-hover:brightness-100 transition-all duration-500"
+                    />
+                  </div>
+                  <span className="text-xs font-bold text-center text-slate-500 group-hover:text-slate-300 uppercase tracking-widest">{brand.name}</span>
                 </div>
-                <span className="text-xs font-bold text-center text-slate-300">{brand.name}</span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 

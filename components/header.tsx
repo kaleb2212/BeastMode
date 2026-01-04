@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from "react"
 import { Menu, X, Sun, Moon } from "lucide-react"
-import Image from "next/image"
 import Link from "next/link"
+import Logo from "@/components/logo"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -26,13 +26,7 @@ export default function Header() {
           <Link href="/">
             <div className="flex items-center gap-3 cursor-pointer group">
               <div className="w-12 h-12 flex items-center justify-center transition-transform group-hover:scale-110">
-                <Image
-                  src="/beastmode-logo-v2.png"
-                  alt="BeastMode Technologies"
-                  width={48}
-                  height={48}
-                  className="w-12 h-12"
-                />
+                <Logo size={48} />
               </div>
               <span className="text-2xl font-black text-white tracking-widest hidden sm:inline">BEASTMODE</span>
             </div>
@@ -53,9 +47,11 @@ export default function Header() {
 
           {/* CTA */}
           <div className="hidden md:flex items-center gap-6">
-            <button className="bg-primary text-white px-8 py-3 rounded-xl hover:bg-primary/90 transition-all font-bold text-sm shadow-xl shadow-primary/20">
-              Get Started
-            </button>
+            <Link href="/get-started">
+              <button className="bg-primary text-white px-8 py-3 rounded-xl hover:bg-primary/90 transition-all font-bold text-sm shadow-xl shadow-primary/20">
+                Get Started
+              </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -77,9 +73,11 @@ export default function Header() {
               <Link href="/contact" className="text-xl font-bold text-slate-200 hover:text-primary transition" onClick={() => setIsOpen(false)}>
                 Contact
               </Link>
-              <button className="bg-primary text-white px-8 py-4 rounded-xl w-full font-bold text-lg">
-                Get Started
-              </button>
+              <Link href="/get-started" onClick={() => setIsOpen(false)}>
+                <button className="bg-primary text-white px-8 py-4 rounded-xl w-full font-bold text-lg">
+                  Get Started
+                </button>
+              </Link>
             </div>
           </div>
         )}
