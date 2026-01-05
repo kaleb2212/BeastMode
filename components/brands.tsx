@@ -1,11 +1,11 @@
 "use client"
 
 const brands = [
-  { name: "ZKTeco", logo: "C:/Users/Laptop/.gemini/antigravity/brain/ef3d55c9-515f-4aca-bd9b-5494d91c6b14/zkteco_logo_premium_1767540805676.png" },
-  { name: "Cisco", logo: "C:/Users/Laptop/.gemini/antigravity/brain/ef3d55c9-515f-4aca-bd9b-5494d91c6b14/cisco_logo_premium_1767540824881.png" },
-  { name: "Nemtek", logo: "C:/Users/Laptop/.gemini/antigravity/brain/ef3d55c9-515f-4aca-bd9b-5494d91c6b14/nemtek_logo_premium_1767540878054.png" },
-  { name: "Hikvision", logo: "C:/Users/Laptop/.gemini/antigravity/brain/ef3d55c9-515f-4aca-bd9b-5494d91c6b14/hikvision_logo_premium_1767540843751.png" },
-  { name: "Western Digital", logo: "C:/Users/Laptop/.gemini/antigravity/brain/ef3d55c9-515f-4aca-bd9b-5494d91c6b14/wd_logo_premium_1767540860755.png" },
+  { name: "ZKTeco", logo: "/ZkTeco logo.png" },
+  { name: "Cisco", logo: "/cisco logo.png" },
+  { name: "Nemtek", logo: "/Nemtek logo.png" },
+  { name: "Hikvision", logo: "/Hikvision logo.png" },
+  { name: "Western Digital", logo: "/WD logo.png" },
 ]
 
 import Link from "next/link"

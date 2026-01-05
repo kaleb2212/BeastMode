@@ -8,7 +8,7 @@ const BRANDS_DETAIL = [
     {
         id: "zkteco",
         name: "ZKTeco",
-        logo: "C:/Users/Laptop/.gemini/antigravity/brain/ef3d55c9-515f-4aca-bd9b-5494d91c6b14/zkteco_logo_premium_1767540805676.png",
+        logo: "/ZkTeco logo.png",
         description: "A global leader in biometric verification technologies and security software.",
         products: ["Biometric Access Control", "Time & Attendance Systems", "Smart Entrance Control", "Security Inspection"],
         association: "ZKTeco serves as the backbone of our physical security and access management solutions, providing military-grade biometric data for enterprise-level safety.",
@@ -19,7 +19,7 @@ const BRANDS_DETAIL = [
     {
         id: "cisco",
         name: "Cisco",
-        logo: "C:/Users/Laptop/.gemini/antigravity/brain/ef3d55c9-515f-4aca-bd9b-5494d91c6b14/cisco_logo_premium_1767540824881.png",
+        logo: "/cisco logo.png",
         description: "The worldwide leader in networking for the internet and enterprise communication.",
         products: ["Enterprise Switches & Routers", "Cybersecurity Firewalls", "Wireless Networking", "Unified Communications"],
         association: "Cisco hardware powers our ICT infrastructure, ensuring zero-latency connectivity and robust networking for every BeastMode ecosystem.",
@@ -30,7 +30,7 @@ const BRANDS_DETAIL = [
     {
         id: "hikvision",
         name: "Hikvision",
-        logo: "C:/Users/Laptop/.gemini/antigravity/brain/ef3d55c9-515f-4aca-bd9b-5494d91c6b14/hikvision_logo_premium_1767540843751.png",
+        logo: "/Hikvision logo.png",
         description: "The world's leading provider of innovative security products and solutions.",
         products: ["4K IP Cameras", "Network Video Recorders (NVR)", "Thermal Imaging", "AI Video Analytics"],
         association: "Hikvision provides the 'eyes' of our ecosystem. We integrate their AI-driven surveillance to provide real-time visual intelligence and threat detection.",
@@ -41,7 +41,7 @@ const BRANDS_DETAIL = [
     {
         id: "wd",
         name: "Western Digital",
-        logo: "C:/Users/Laptop/.gemini/antigravity/brain/ef3d55c9-515f-4aca-bd9b-5494d91c6b14/wd_logo_premium_1767540860755.png",
+        logo: "/WD logo.png",
         description: "A pioneer in the data storage industry, enabling the storage of the world's data.",
         products: ["Purple Surveillance Drives", "Enterprise Data Center Storage", "High-Performance SSDs", "NAS Solutions"],
         association: "Data integrity is paramount. We use Western Digital's specialized surveillance-grade storage to ensure your video and network data is never lost.",
@@ -52,7 +52,7 @@ const BRANDS_DETAIL = [
     {
         id: "nemtek",
         name: "Nemtek",
-        logo: "C:/Users/Laptop/.gemini/antigravity/brain/ef3d55c9-515f-4aca-bd9b-5494d91c6b14/nemtek_logo_premium_1767540878054.png",
+        logo: "/Nemtek logo.png",
         description: "An innovative leader in the electric fencing and perimeter security industry.",
         products: ["Intelligent Energizers", "Perimeter Monitoring Software", "Electric Fence Hardware", "Agricultural Fencing"],
         association: "Nemtek defines the perimeter of our security solutions. Their intelligent energizers integrate directly into our central monitoring for instant intrusion alerts.",
