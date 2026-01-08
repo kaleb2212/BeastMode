@@ -1897,7 +1897,6 @@ export default function ServicePage({ params }: { params: Promise<{ slug: string
                     </div>
                     <div className="text-left">
                       <h3 className="text-lg font-bold text-white">{impl.phase}</h3>
-                      <p className="text-slate-400">{impl.duration}</p>
                     </div>
                   </div>
                   <ChevronDown
