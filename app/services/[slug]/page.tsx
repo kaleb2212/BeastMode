@@ -697,7 +697,7 @@ const servicesData: Record<string, ServiceData> = {
     ],
     caseStudies: [
       {
-        company: "Elite Retail Group",
+        company: "Retail Group",
         industry: "Retail & Shopping Centers",
         challenge: "High inventory shrinkage (4.2%) costing $2.3M annually across 45 locations",
         solution: "Deployed 2000+ AI-enabled cameras with facial recognition and behavior analytics across all stores",
@@ -705,7 +705,7 @@ const servicesData: Record<string, ServiceData> = {
           "Reduced shrinkage to 0.8% within 6 months ($2.1M annual savings), increased staff accountability, improved customer service through heat mapping",
       },
       {
-        company: "National Bank Corporation",
+        company: "Banking Group",
         industry: "Financial Services",
         challenge: "Multiple security breaches and audit compliance gaps affecting operations",
         solution: "Installed 200 military-grade cameras with military-grade encryption and 5-year archival storage",
@@ -713,7 +713,7 @@ const servicesData: Record<string, ServiceData> = {
           "Zero security incidents in 2 years, full regulatory compliance, improved audit findings, rapid fraud investigation reduced from days to hours",
       },
       {
-        company: "Premier Manufacturing Ltd",
+        company: "Manufacturing Group",
         industry: "Manufacturing & Production",
         challenge: "Equipment downtime and worker safety incidents costing $5M+ annually",
         solution:
@@ -723,12 +723,12 @@ const servicesData: Record<string, ServiceData> = {
       },
     ],
     certifications: [
-      "ISO 27001 (Information Security)",
-      "ISO 9001 (Quality Management)",
-      "SOC 2 Type II Compliance",
-      "GDPR Compliant",
-      "HIPAA Compatible",
-      "PCI DSS Certified",
+      "Hikvision Associate",
+      "Hikvision Professional",
+      "CCNP",
+      "Cybersecurity",
+      "SOC",
+      "Hardware Maintenance",
     ],
     technologies: ["Hikvision", "Cisco", "WesternDigital", "Seagate"],
   },
@@ -957,7 +957,7 @@ const servicesData: Record<string, ServiceData> = {
     ],
     caseStudies: [
       {
-        company: "Global Financial Services Inc",
+        company: "Financial Services Group",
         industry: "Financial Services",
         challenge:
           "Multiple IT incidents causing 200+ hours of downtime annually, affecting operations and client satisfaction",
@@ -966,7 +966,7 @@ const servicesData: Record<string, ServiceData> = {
           "Reduced downtime to < 8 hours annually (96% improvement), achieved 99.95% uptime, improved client confidence, saved $1.8M in recovery costs",
       },
       {
-        company: "Metropolitan Healthcare System",
+        company: "Healthcare Group",
         industry: "Healthcare",
         challenge: "HIPAA compliance gaps and lack of disaster recovery planning creating audit risks",
         solution: "Deployed compliant backup systems, encryption, and comprehensive disaster recovery planning",
@@ -974,7 +974,7 @@ const servicesData: Record<string, ServiceData> = {
           "Achieved 100% HIPAA compliance, passed all audits, recovered from ransomware attack in 45 minutes, gained ISO 27001 certification",
       },
       {
-        company: "Tech Growth Startup Corp",
+        company: "Technology Startup Group",
         industry: "Software Development",
         challenge: "Rapid growth outpacing IT staff capability, causing productivity losses",
         solution: "Transitioned to managed ICT support with automated provisioning and proactive monitoring",
@@ -983,12 +983,12 @@ const servicesData: Record<string, ServiceData> = {
       },
     ],
     certifications: [
-      "ISO 27001 (Information Security)",
-      "ISO 20000 (IT Service Management)",
-      "ITIL Certified",
-      "SOC 2 Type II",
-      "GDPR Compliant",
-      "HIPAA Compliant",
+      "Hikvision Associate",
+      "Hikvision Professional",
+      "CCNP",
+      "Cybersecurity",
+      "SOC",
+      "Hardware Maintenance",
     ],
     technologies: ["Cisco", "ZKTeco"],
   },
@@ -1217,7 +1217,7 @@ const servicesData: Record<string, ServiceData> = {
     ],
     caseStudies: [
       {
-        company: "Fortune 500 Tech Corporation",
+        company: "Technology Corporation",
         industry: "Technology & Software",
         challenge: "Outdated network infrastructure causing latency and productivity losses across 50 global offices",
         solution: "Deployed modern switching fabric with SD-WAN, cloud optimization, and 24/7 monitoring",
@@ -1225,7 +1225,7 @@ const servicesData: Record<string, ServiceData> = {
           "Reduced latency by 85%, improved employee productivity by 23%, cut WAN costs by 40%, achieved 99.99% uptime",
       },
       {
-        company: "National University System",
+        company: "University System",
         industry: "Education",
         challenge: "WiFi coverage issues affecting 40,000 students and staff across 8 campuses",
         solution: "Campus-wide WiFi 6E deployment with mesh networking and unified management",
@@ -1233,7 +1233,7 @@ const servicesData: Record<string, ServiceData> = {
           "Achieved 99%+ coverage, supported 25,000 concurrent connections, improved student experience scores by 67%",
       },
       {
-        company: "Regional Healthcare Network",
+        company: "Healthcare Network",
         industry: "Healthcare",
         challenge: "Network bottlenecks impacting patient care systems and telemedicine capabilities",
         solution: "Implemented multi-gigabit core network with cloud connectivity and HIPAA-compliant security",
@@ -1242,12 +1242,12 @@ const servicesData: Record<string, ServiceData> = {
       },
     ],
     certifications: [
-      "ISO 27001 (Information Security)",
-      "ISO 9001 (Quality Management)",
-      "SOC 2 Type II Compliance",
-      "GDPR Compliant",
-      "HIPAA Compatible",
-      "NIST 800-171 Aligned",
+      "Hikvision Associate",
+      "Hikvision Professional",
+      "CCNP",
+      "Cybersecurity",
+      "SOC",
+      "Hardware Maintenance",
     ],
     technologies: ["Cisco", "ZKTeco", "Nemtek"],
   },
@@ -1476,7 +1476,7 @@ const servicesData: Record<string, ServiceData> = {
     ],
     caseStudies: [
       {
-        company: "Liberty Corporate Park",
+        company: "Corporate Park",
         industry: "Commercial Real Estate",
         challenge: "Multiple break-ins costing $800K annually with poor emergency communication protocols",
         solution: "Installed integrated alarm system with CCTV integration and HD intercom emergency communication",
@@ -1484,7 +1484,7 @@ const servicesData: Record<string, ServiceData> = {
           "Zero break-ins in 3 years, 100% emergency communication coverage, improved tenant satisfaction by 45%, ROI in 14 months",
       },
       {
-        company: "Northeast Medical Center",
+        company: "Medical Center",
         industry: "Healthcare",
         challenge: "Inadequate staff communication during emergencies, high violence incidents against staff",
         solution:
@@ -1493,7 +1493,7 @@ const servicesData: Record<string, ServiceData> = {
           "Reduced violent incidents by 72%, improved staff response time by 85%, achieved JC compliance for emergency procedures",
       },
       {
-        company: "Midwest University System",
+        company: "University System",
         industry: "Education",
         challenge:
           "Campus-wide emergency communication gaps, inability to reach all students and staff during incidents",
@@ -1504,13 +1504,12 @@ const servicesData: Record<string, ServiceData> = {
       },
     ],
     certifications: [
-      "UL (Underwriters Laboratories) Certified",
-      "ISO 27001 (Information Security)",
-      "SOC 2 Type II Compliant",
-      "NFPA 72 (Fire Alarm Code) Compliant",
-      "GDPR Compatible",
-      "HIPAA Compatible",
-      "FERPA Aligned",
+      "Hikvision Associate",
+      "Hikvision Professional",
+      "CCNP",
+      "Cybersecurity",
+      "SOC",
+      "Hardware Maintenance",
     ],
     technologies: ["ZKTeco", "Nemtek", "Aluha"],
   },
@@ -2084,13 +2083,19 @@ export default function ServicePage({ params }: { params: Promise<{ slug: string
               Contact our experts today to discuss how {service.title} can benefit your organization.
             </p>
             <div className="flex flex-wrap gap-4">
-              <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-slate-100 transition-colors flex items-center gap-2">
+              <Link
+                href="/contact"
+                className="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-slate-100 transition-colors flex items-center gap-2"
+              >
                 <Phone className="w-5 h-5" />
                 Get in Touch
-              </button>
-              <button className="border-2 border-white px-8 py-3 rounded-lg font-bold hover:bg-white/10 transition-colors">
+              </Link>
+              <Link
+                href="/contact"
+                className="border-2 border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white/10 transition-colors"
+              >
                 Request Demo
-              </button>
+              </Link>
             </div>
           </div>
         </section>
