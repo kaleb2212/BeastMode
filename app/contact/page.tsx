@@ -44,26 +44,36 @@ export default function ContactPage() {
                             <ContactCard
                                 icon={Mail}
                                 title="Email Us"
-                                details="ops@beastmode.tech"
+                                details={
+                                    <div className="flex flex-col gap-1">
+                                        <span>info@beastmodetechnologies.et</span>
+                                        <span>support@beastmodetechnologies.et</span>
+                                    </div>
+                                }
                                 sub="24/7 Priority Support"
                             />
                             <ContactCard
                                 icon={Phone}
                                 title="Call Us"
-                                details="+1 (800) BEASTMODE"
-                                sub="Mon-Fri, 9am - 6pm"
+                                details="+251 963 375252"
+                                sub="Mon-Sun, 24/7 Support"
+                            />
+                            <ContactCard
+                                icon={Send}
+                                title="Telegram"
+                                details={
+                                    <div className="flex flex-col gap-1">
+                                        <a href="https://t.me/beastmodetech" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">@beastmodetech</a>
+                                        <a href="https://t.me/beastmodetech_support" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">@beastmodetech_support</a>
+                                    </div>
+                                }
+                                sub="Join our community"
                             />
                             <ContactCard
                                 icon={MapPin}
                                 title="Visit HQ"
                                 details="Elite Tech Hub, Sector 7"
-                                sub="Innovation City, DXB"
-                            />
-                            <ContactCard
-                                icon={Clock}
-                                title="Response Time"
-                                details="Within 2 Hours"
-                                sub="For enterprise inquiries"
+                                sub="Addis Ababa, Ethiopia"
                             />
                         </div>
 
@@ -151,7 +161,7 @@ function ContactCard({ icon: Icon, title, details, sub }: any) {
                 <Icon size={28} className="text-slate-500 group-hover:text-white transition-colors" />
             </div>
             <h4 className="text-xs font-black text-slate-500 uppercase tracking-[0.2em] mb-2">{title}</h4>
-            <p className="text-lg font-bold text-white mb-1">{details}</p>
+            <div className="text-lg font-bold text-white mb-1">{details}</div>
             <p className="text-xs text-slate-600 font-medium uppercase">{sub}</p>
         </div>
     )

@@ -5,16 +5,63 @@ import { Inter as V0_Font_Inter, Geist_Mono as V0_Font_Geist_Mono, Source_Serif_
 
 import "./globals.css"
 
+const SITE_URL = "https://beastmodetechnologies.et"
+
 export const metadata: Metadata = {
-  title: "BeastMode Technologies - ICT & Security Solutions",
-  description: "All-in-one ICT and Security solution provider. CCTV, Networking, Alarm Systems, and ICT Support.",
-  generator: "v0.app",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "BeastMode Technologies | Advanced ICT & Security Solutions",
+    template: "%s | BeastMode Technologies"
+  },
+  description: "Premier ICT and Security solution provider in Ethiopia. Specializing in CCTV surveillance, enterprise networking, industrial alarm systems, and managed ICT support.",
+  keywords: ["CCTV Installation", "Networking Solutions", "Security Systems", "ICT Support Ethiopia", "Alarm Systems", "BeastMode Technologies", "Surveillance Systems"],
+  authors: [{ name: "BeastMode Technologies" }],
+  creator: "BeastMode Technologies",
+  publisher: "BeastMode Technologies",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: SITE_URL,
+    siteName: "BeastMode Technologies",
+    title: "BeastMode Technologies | Advanced ICT & Security Solutions",
+    description: "Expert ICT and Security solutions for homes and businesses. CCTV, Networking, and more.",
+    images: [
+      {
+        url: "/beastmode-logo.png",
+        width: 1200,
+        height: 630,
+        alt: "BeastMode Technologies Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "BeastMode Technologies | ICT & Security Solutions",
+    description: "Enterprise-grade ICT and Security protection for your assets.",
+    images: ["/beastmode-logo.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 }
 
 // Initialize fonts
-const _inter = V0_Font_Inter({ subsets: ['latin'], weight: ["100","200","300","400","500","600","700","800","900"] })
-const _geistMono = V0_Font_Geist_Mono({ subsets: ['latin'], weight: ["100","200","300","400","500","600","700","800","900"] })
-const _sourceSerif_4 = V0_Font_Source_Serif_4({ subsets: ['latin'], weight: ["200","300","400","500","600","700","800","900"] })
+const _inter = V0_Font_Inter({ subsets: ['latin'], weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"] })
+const _geistMono = V0_Font_Geist_Mono({ subsets: ['latin'], weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"] })
+const _sourceSerif_4 = V0_Font_Source_Serif_4({ subsets: ['latin'], weight: ["200", "300", "400", "500", "600", "700", "800", "900"] })
 
 export default function RootLayout({
   children,

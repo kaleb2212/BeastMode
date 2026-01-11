@@ -1,7 +1,13 @@
+import type { Metadata } from "next"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { Shield, Zap, Network, Speaker } from "lucide-react"
 import Link from "next/link"
+
+export const metadata: Metadata = {
+  title: "Our Services | CCTV, Networking & ICT Support",
+  description: "Explore our comprehensive suite of security and ICT services including AI-driven surveillance, networking, and alarm systems.",
+}
 
 const services = [
   {

@@ -1,4 +1,4 @@
-import { Facebook, Linkedin, Twitter } from "lucide-react"
+import { Facebook, Linkedin, Twitter, Send } from "lucide-react"
 import Link from "next/link"
 import Logo from "@/components/logo"
 
@@ -94,10 +94,12 @@ export default function Footer() {
                 <Linkedin size={20} className="text-slate-400 group-hover:text-primary" />
               </a>
               <a
-                href="#"
+                href="https://t.me/beastmodetech"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-12 h-12 bg-slate-900 border border-slate-800 rounded-xl flex items-center justify-center hover:bg-slate-800 hover:border-primary/50 transition-all group"
               >
-                <Twitter size={20} className="text-slate-400 group-hover:text-primary" />
+                <Send size={20} className="text-slate-400 group-hover:text-primary" />
               </a>
             </div>
           </div>
