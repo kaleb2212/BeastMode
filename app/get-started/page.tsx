@@ -383,21 +383,21 @@ export default function GetStartedPage() {
                                                     label="NVR Storage"
                                                     options={["2TB (Standard)", "4TB (Professional)", "8TB+ (Enterprise)"]}
                                                     value={selections.infrastructure.nvr}
-                                                    onChange={(val) => handleConfigChange("nvr", val)}
+                                                    onChange={(val: string) => handleConfigChange("nvr", val)}
                                                 />
                                                 <ConfigCard
                                                     icon={Zap}
                                                     label="Connectivity"
                                                     options={["Standard Cat6", "Shielded Industrial", "Fiber Optic Bridge"]}
                                                     value={selections.infrastructure.cable}
-                                                    onChange={(val) => handleConfigChange("cable", val)}
+                                                    onChange={(val: string) => handleConfigChange("cable", val)}
                                                 />
                                                 <ConfigCard
                                                     icon={Settings2}
                                                     label="PoE Switch"
                                                     options={["Managed 8-Port", "High-Bandwidth 16-Port", "Chassis 24-Port"]}
                                                     value={selections.infrastructure.switches}
-                                                    onChange={(val) => handleConfigChange("switches", val)}
+                                                    onChange={(val: string) => handleConfigChange("switches", val)}
                                                 />
                                             </div>
                                             <button

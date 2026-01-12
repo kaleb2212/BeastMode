@@ -8,10 +8,32 @@ import { useState } from "react"
 export default function ContactPage() {
     const [formStatus, setFormStatus] = useState<"idle" | "submitting" | "success">("idle")
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
         setFormStatus("submitting")
-        setTimeout(() => setFormStatus("success"), 1500)
+
+        const form = e.target as HTMLFormElement
+        const formData = new FormData(form)
+
+        try {
+            const response = await fetch("https://formsubmit.co/support@beastmodetechnologies.et", {
+                method: "POST",
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+
+            if (response.ok) {
+                setFormStatus("success")
+            } else {
+                alert("There was an issue submitting your message. Please try again or contact us directly.")
+                setFormStatus("idle")
+            }
+        } catch (error) {
+            alert("There was an issue submitting your message. Please try again or contact us directly.")
+            setFormStatus("idle")
+        }
     }
 
     return (
@@ -120,14 +142,19 @@ export default function ContactPage() {
                                 </div>
                             ) : (
                                 <form onSubmit={handleSubmit} className="space-y-8">
+                                    {/* FormSubmit Configuration */}
+                                    <input type="hidden" name="_subject" value="New Contact Message - BeastMode Technologies" />
+                                    <input type="hidden" name="_template" value="table" />
+                                    <input type="hidden" name="_captcha" value="false" />
+
                                     <div className="space-y-4">
                                         <label className="text-xs font-black text-slate-500 uppercase tracking-[0.2em]">Inquiry Details</label>
                                         <div className="grid sm:grid-cols-2 gap-6">
-                                            <input required type="text" placeholder="Full Name" className="w-full bg-slate-950 border border-slate-800 rounded-2xl px-8 py-5 outline-none focus:border-primary transition-all font-medium" />
-                                            <input required type="email" placeholder="Work Email" className="w-full bg-slate-950 border border-slate-800 rounded-2xl px-8 py-5 outline-none focus:border-primary transition-all font-medium" />
+                                            <input required type="text" name="name" placeholder="Full Name" className="w-full bg-slate-950 border border-slate-800 rounded-2xl px-8 py-5 outline-none focus:border-primary transition-all font-medium" />
+                                            <input required type="email" name="email" placeholder="Work Email" className="w-full bg-slate-950 border border-slate-800 rounded-2xl px-8 py-5 outline-none focus:border-primary transition-all font-medium" />
                                         </div>
-                                        <input required type="text" placeholder="Subject" className="w-full bg-slate-950 border border-slate-800 rounded-2xl px-8 py-5 outline-none focus:border-primary transition-all font-medium" />
-                                        <textarea required placeholder="Briefly describe your requirements..." className="w-full bg-slate-950 border border-slate-800 rounded-2xl px-8 py-5 outline-none focus:border-primary transition-all font-medium min-h-[150px] resize-none"></textarea>
+                                        <input required type="text" name="subject" placeholder="Subject" className="w-full bg-slate-950 border border-slate-800 rounded-2xl px-8 py-5 outline-none focus:border-primary transition-all font-medium" />
+                                        <textarea required name="message" placeholder="Briefly describe your requirements..." className="w-full bg-slate-950 border border-slate-800 rounded-2xl px-8 py-5 outline-none focus:border-primary transition-all font-medium min-h-[150px] resize-none"></textarea>
                                     </div>
                                     <button
                                         disabled={formStatus === "submitting"}

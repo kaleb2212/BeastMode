@@ -8,10 +8,32 @@ import { useState } from "react"
 export default function ConsultationPage() {
     const [formStatus, setFormStatus] = useState<"idle" | "submitting" | "success">("idle")
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
         setFormStatus("submitting")
-        setTimeout(() => setFormStatus("success"), 1500)
+
+        const form = e.target as HTMLFormElement
+        const formData = new FormData(form)
+
+        try {
+            const response = await fetch("https://formsubmit.co/support@beastmodetechnologies.et", {
+                method: "POST",
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+
+            if (response.ok) {
+                setFormStatus("success")
+            } else {
+                alert("There was an issue submitting your consultation request. Please try again or contact us directly.")
+                setFormStatus("idle")
+            }
+        } catch (error) {
+            alert("There was an issue submitting your consultation request. Please try again or contact us directly.")
+            setFormStatus("idle")
+        }
     }
 
     return (
@@ -82,15 +104,15 @@ export default function ConsultationPage() {
                             <div className="space-y-4">
                                 <div className="flex items-center gap-3 text-slate-300">
                                     <Phone size={18} className="text-primary" />
-                                    <span>+1 (800) BEASTMODE</span>
+                                    <span>+251 963 375252</span>
                                 </div>
                                 <div className="flex items-center gap-3 text-slate-300">
                                     <Mail size={18} className="text-primary" />
-                                    <span>consult@beastmode.tech</span>
+                                    <span>support@beastmodetechnologies.et</span>
                                 </div>
                                 <div className="flex items-center gap-3 text-slate-300">
                                     <MapPin size={18} className="text-primary" />
-                                    <span>Elite Tech Hub, Sector 7, Innovation City</span>
+                                    <span>Addis Ababa, Ethiopia</span>
                                 </div>
                             </div>
                         </div>
@@ -116,11 +138,17 @@ export default function ConsultationPage() {
                                 </div>
                             ) : (
                                 <form onSubmit={handleSubmit} className="space-y-6">
+                                    {/* FormSubmit Configuration */}
+                                    <input type="hidden" name="_subject" value="New Consultation Request - BeastMode Technologies" />
+                                    <input type="hidden" name="_template" value="table" />
+                                    <input type="hidden" name="_captcha" value="false" />
+
                                     <div className="space-y-2">
                                         <label className="text-sm font-bold text-slate-400 uppercase tracking-wider">Full Name</label>
                                         <input
                                             required
                                             type="text"
+                                            name="name"
                                             placeholder="John Doe"
                                             className="w-full bg-slate-950 border border-slate-800 rounded-xl px-6 py-4 outline-none focus:border-primary transition-colors text-white"
                                         />
@@ -131,6 +159,7 @@ export default function ConsultationPage() {
                                             <input
                                                 required
                                                 type="email"
+                                                name="email"
                                                 placeholder="john@company.com"
                                                 className="w-full bg-slate-950 border border-slate-800 rounded-xl px-6 py-4 outline-none focus:border-primary transition-colors text-white"
                                             />
@@ -140,14 +169,15 @@ export default function ConsultationPage() {
                                             <input
                                                 required
                                                 type="tel"
-                                                placeholder="+1 234 567 890"
+                                                name="phone"
+                                                placeholder="+251 912 345678"
                                                 className="w-full bg-slate-950 border border-slate-800 rounded-xl px-6 py-4 outline-none focus:border-primary transition-colors text-white"
                                             />
                                         </div>
                                     </div>
                                     <div className="space-y-2">
                                         <label className="text-sm font-bold text-slate-400 uppercase tracking-wider">Inquiry Type</label>
-                                        <select className="w-full bg-slate-950 border border-slate-800 rounded-xl px-6 py-4 outline-none focus:border-primary transition-colors text-white appearance-none cursor-pointer">
+                                        <select name="inquiry_type" className="w-full bg-slate-950 border border-slate-800 rounded-xl px-6 py-4 outline-none focus:border-primary transition-colors text-white appearance-none cursor-pointer">
                                             <option>Complete Ecosystem Design</option>
                                             <option>CCTV & Surveillance Audit</option>
                                             <option>ICT Infrastructure Upgrade</option>
@@ -157,6 +187,7 @@ export default function ConsultationPage() {
                                     <div className="space-y-2">
                                         <label className="text-sm font-bold text-slate-400 uppercase tracking-wider">Project Details</label>
                                         <textarea
+                                            name="message"
                                             placeholder="Tell us about your security and ICT challenges..."
                                             className="w-full bg-slate-950 border border-slate-800 rounded-xl px-6 py-4 outline-none focus:border-primary transition-colors text-white min-h-[120px] resize-none"
                                         ></textarea>
