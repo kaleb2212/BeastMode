@@ -15,11 +15,10 @@ export default function Hero() {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight text-balance">
-                Advanced <span className="text-primary italic">ICT & Security</span> Solutions
+                Advanced <span className="text-primary italic">ICT & Security</span> Solutions in Addis Ababa
               </h1>
               <p className="text-xl text-slate-300 max-w-lg text-pretty">
-                Complete protection and connectivity for your business. From surveillance to networking, we've got you
-                covered with enterprise-grade tech.
+                Complete protection and connectivity for your business in Ethiopia. From CCTV surveillance to networking, we provide enterprise-grade tech in Addis Ababa.
               </p>
             </div>
 

@@ -164,12 +164,3 @@
   }
 }
 
-/* Hide Vercel/v0/Next Dev Toolbar/Badge */
-[data-vercel-toolbar],
-[data-v0-badge],
-#v0-badge,
-.__next-dev-overlay {
-  display: none !important;
-  visibility: hidden !important;
-  pointer-events: none !important;
-}

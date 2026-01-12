@@ -1,7 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Analytics } from "@vercel/analytics/next"
-import { Inter as V0_Font_Inter, Geist_Mono as V0_Font_Geist_Mono, Source_Serif_4 as V0_Font_Source_Serif_4 } from 'next/font/google'
+import { Inter, Geist_Mono, Source_Serif_4 } from 'next/font/google'
 
 import "./globals.css"
 
@@ -10,11 +10,11 @@ const SITE_URL = "https://beastmodetechnologies.et"
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "BeastMode Technologies | Advanced ICT & Security Solutions",
+    default: "BeastMode Technologies | ICT & CCTV Security Solutions in Addis Ababa",
     template: "%s | BeastMode Technologies"
   },
-  description: "Premier ICT and Security solution provider in Ethiopia. Specializing in CCTV surveillance, enterprise networking, industrial alarm systems, and managed ICT support.",
-  keywords: ["CCTV Installation", "Networking Solutions", "Security Systems", "ICT Support Ethiopia", "Alarm Systems", "BeastMode Technologies", "Surveillance Systems"],
+  description: "Premier ICT and Security solution provider in Addis Ababa, Ethiopia. Specializing in CCTV surveillance installation, enterprise networking, industrial alarm systems, and managed ICT support for businesses in Ethiopia.",
+  keywords: ["CCTV Installation Addis Ababa", "ICT Support Ethiopia", "Networking Solutions Addis Ababa", "Security Systems Ethiopia", "Alarm Systems Addis Ababa", "BeastMode Technologies", "Surveillance Systems Ethiopia", "CCTV Addis Ababa", "IT Support Addis Ababa"],
   authors: [{ name: "BeastMode Technologies" }],
   creator: "BeastMode Technologies",
   publisher: "BeastMode Technologies",
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: SITE_URL,
     siteName: "BeastMode Technologies",
-    title: "BeastMode Technologies | Advanced ICT & Security Solutions",
-    description: "Expert ICT and Security solutions for homes and businesses. CCTV, Networking, and more.",
+    title: "BeastMode Technologies | Local ICT & CCTV Specialists in Addis Ababa",
+    description: "Expert ICT and Security solutions for homes and businesses in Addis Ababa, Ethiopia. CCTV, Networking, and more.",
     images: [
       {
         url: "/beastmode-logo.png",
@@ -59,9 +59,9 @@ export const metadata: Metadata = {
 }
 
 // Initialize fonts
-const _inter = V0_Font_Inter({ subsets: ['latin'], weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"] })
-const _geistMono = V0_Font_Geist_Mono({ subsets: ['latin'], weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"] })
-const _sourceSerif_4 = V0_Font_Source_Serif_4({ subsets: ['latin'], weight: ["200", "300", "400", "500", "600", "700", "800", "900"] })
+const _inter = Inter({ subsets: ['latin'], weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"] })
+const _geistMono = Geist_Mono({ subsets: ['latin'], weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"] })
+const _sourceSerif_4 = Source_Serif_4({ subsets: ['latin'], weight: ["200", "300", "400", "500", "600", "700", "800", "900"] })
 
 export default function RootLayout({
   children,

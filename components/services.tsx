@@ -40,10 +40,10 @@ export default function Services() {
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-white">Our Solutions</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white">Our Solutions in Ethiopia</h2>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full"></div>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto text-pretty">
-            Integrated ICT and Security platforms engineered for excellence
+            Integrated ICT and Security platforms engineered for excellence in Addis Ababa
           </p>
         </div>
 

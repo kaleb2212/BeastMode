@@ -11,8 +11,8 @@ import { Shield, Zap, Network, Speaker } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Advanced ICT & Security Solutions | BeastMode Technologies",
-  description: "Transform your business with BeastMode Technologies. We provide enterprise-grade CCTV installation, networking solutions, and professional ICT support in Ethiopia.",
+  title: "CCTV Installation & ICT Support in Addis Ababa | BeastMode Technologies",
+  description: "BeastMode Technologies provides enterprise-grade CCTV installation, professional ICT support, and networking solutions in Addis Ababa, Ethiopia. Secure your business today.",
 }
 
 export default function Home() {
