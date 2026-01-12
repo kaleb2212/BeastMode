@@ -1,26 +1,26 @@
 export default function Testimonials() {
   const testimonials = [
     {
-      name: "John Kariuki",
-      role: "Business Owner",
+      name: "Corporate Client",
+      role: "Logistics Hub Manager",
       text: "After my warehouse was victim of armed robbery, I decided not to rely on security guards alone. I installed BeastMode's warehouse alarm system and I feel much more secure!",
       rating: 5,
     },
     {
-      name: "Sarah Okonkwo",
-      role: "Retail Manager",
+      name: "Retail Partner",
+      role: "Branch Manager",
       text: "So far so good. I installed it on my shop and it works exactly as expected. I am also happy about the backup power since there are several power outages in our area.",
       rating: 5,
     },
     {
-      name: "Michael Chen",
-      role: "Facility Manager",
+      name: "Strategic Liaison",
+      role: "Facility Director",
       text: "Friendly and professional staff. They surveyed my office, sent their price quotation the same day, and installed the entire security system the following day.",
       rating: 5,
     },
     {
-      name: "Alice Mujtaba",
-      role: "Operations Director",
+      name: "Verified Homeowner",
+      role: "Private Estate Owner",
       text: "My home was broken into while we were asleep. Since installing BeastMode, I can sleep peacefully knowing my family and home are protected.",
       rating: 5,
     },

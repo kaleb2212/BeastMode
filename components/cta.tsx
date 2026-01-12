@@ -47,11 +47,11 @@ export default function CTA() {
               <div className="space-y-4">
                 <div className="flex items-center gap-4 text-xl">
                   <span className="text-3xl">📞</span>
-                  <span>+1 (800) BEASTMODE</span>
+                  <span>+251 963 375252</span>
                 </div>
                 <div className="flex items-center gap-4 text-xl">
                   <span className="text-3xl">✉️</span>
-                  <span>support@beastmode.tech</span>
+                  <span>info@beastmodetechnologies.et</span>
                 </div>
               </div>
               <p className="text-sm opacity-60 font-mono italic mt-4">// OPERATING 24/7/365 HUB</p>
