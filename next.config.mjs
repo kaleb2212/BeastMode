@@ -8,7 +8,6 @@ const nextConfig = {
   },
   devIndicators: false,
   experimental: {
-    devOverlay: false,
   },
 }
 
