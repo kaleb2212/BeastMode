@@ -24,11 +24,11 @@ export default function Header() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/">
-            <div className="flex items-center gap-3 cursor-pointer group">
-              <div className="w-12 h-12 flex items-center justify-center transition-transform group-hover:scale-110">
-                <Logo size={48} />
+            <div className="flex items-center gap-4 cursor-pointer group">
+              <div className="w-16 h-16 flex items-center justify-center transition-transform group-hover:scale-110">
+                <Logo size={64} />
               </div>
-              <span className="text-2xl font-black text-white tracking-widest hidden sm:inline">BEASTMODE</span>
+              <span className="text-3xl font-black text-white tracking-widest hidden sm:inline">BEASTMODE</span>
             </div>
           </Link>
 
