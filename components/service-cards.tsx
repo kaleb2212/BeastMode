@@ -6,7 +6,7 @@ import ServiceModal from "./service-modal"
 const servicesData = [
   {
     title: "CCTV Camera Installation",
-    image: "/security-camera-installation-cctv.jpg",
+    image: "/beastmode-technician-ethiopia.png",
     shortDesc: "HD surveillance with 24/7 monitoring",
     fullDescription:
       "Our comprehensive CCTV camera installation services provide state-of-the-art surveillance solutions designed to protect your premises around the clock. We integrate the latest in video surveillance technology with intelligent monitoring systems.",

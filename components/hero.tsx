@@ -57,8 +57,8 @@ export default function Hero() {
           <div className="relative group">
             <div className="absolute -inset-1 bg-gradient-to-r from-primary to-blue-600 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
             <img
-              src="/security-camera-surveillance-system-modern.jpg"
-              alt="Security Solutions"
+              src="/hikvision-hero-camera.png"
+              alt="Hikvision Security Solutions"
               className="relative w-full rounded-2xl shadow-2xl border border-slate-800"
             />
             <div className="absolute top-4 right-4 bg-primary text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg shadow-primary/20">
