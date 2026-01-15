@@ -6,7 +6,9 @@ const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 const handle = app.getRequestHandler();
 
-const port = process.env.PORT || 3000;
+// Use Plesk's assigned port or default to 3000
+const port = process.env.PORT || process.env.PLESK_NODEJS_PORT || 3000;
+console.log(`Starting Next.js app on port ${port}`);
 
 app.prepare().then(() => {
   createServer((req, res) => {
